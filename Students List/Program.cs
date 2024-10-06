@@ -123,7 +123,15 @@ students.AddRange(new List<Student>
 //foreach(var top3 in top3Student)
 //{
 //    Console.WriteLine($"Name: {top3.Forename} {top3.Surname}, Mark: {top3.Mark}");
-//}
+//
+
+Console.WriteLine("\nAggregate data:");
+var totalStudents = students.Count();
+var averageAge = students.Average(s => s.Age).ToString("#.00");
+var highestMark = students.OrderByDescending(s => s.Mark).Select(s => s.Mark).First();
+Console.WriteLine($"Total number of students: {totalStudents}\nAverage age: {averageAge}\nHighest mark: {highestMark}");
+
+
 
 
 
