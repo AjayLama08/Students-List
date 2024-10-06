@@ -123,7 +123,6 @@ students.AddRange(new List<Student>
 //foreach(var top3 in top3Student)
 //{
 //    Console.WriteLine($"Name: {top3.Forename} {top3.Surname}, Mark: {top3.Mark}");
-//
 
 //Console.WriteLine("\nAggregate data:");
 //var totalStudents = students.Count();
