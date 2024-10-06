@@ -125,14 +125,25 @@ students.AddRange(new List<Student>
 //    Console.WriteLine($"Name: {top3.Forename} {top3.Surname}, Mark: {top3.Mark}");
 //
 
-Console.WriteLine("\nAggregate data:");
-var totalStudents = students.Count();
-var averageAge = students.Average(s => s.Age).ToString("#.00");
-var highestMark = students.OrderByDescending(s => s.Mark).Select(s => s.Mark).First();
-Console.WriteLine($"Total number of students: {totalStudents}\nAverage age: {averageAge}\nHighest mark: {highestMark}");
+//Console.WriteLine("\nAggregate data:");
+//var totalStudents = students.Count();
+//var averageAge = students.Average(s => s.Age).ToString("#.00");
+//var highestMark = students.OrderByDescending(s => s.Mark).Select(s => s.Mark).First();
+//Console.WriteLine($"Total number of students: {totalStudents}\nAverage age: {averageAge}\nHighest mark: {highestMark}");
 
 
-
+//Console.WriteLine("\nSelect and transform data:");
+//var transformData = students.Select(s => new
+//{
+//    Forename = s.Forename,
+//    Surname = s.Surname,
+//    Course = s.Course,
+//    IsMarkAbove80 = s.Mark > 80
+//});
+//foreach(var td in transformData)
+//{
+//    Console.WriteLine($"Name: {td.Forename} {td.Surname}, Course: {td.Course}, IsMarkAbove80: {td.IsMarkAbove80}");
+//}
 
 
 
